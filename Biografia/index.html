@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>ANIMACIONES CSS - ANIMATION</title>
+        <style>
+            body{
+        background-color: pink; /* fondo */
+    }
+            h1{
+                font-family : "century gothic";
+                color : rgba(165, 42, 42, 0);
+                text-align : center;
+                animation-name : titulo;/* titulo para la animacion*/
+                animation-duration : 3s;/* duracion de la animacion*/
+                animation-iteration-count : 1;/* cant, de veces que se realiza la animacion*/
+                animation-fill-mode: forwards;/* indica cual es el ultimo estado que se queda*/
+            }
+            @keyframes titulo{
+                from{
+                    color : rgba(165, 42, 42, 0);
+                }
+                to{
+                    color: rgba(165, 42, 42, 1);
+                }
+            }
+            h2{ 
+                font-family : "century gothic";
+                color : rgba(165, 42, 42, 0);
+                text-align : center;
+                animation-name : subtitulo;/* titulo para la animacion*/
+                animation-duration : 3s;/* duracion de la animacion*/
+                animation-iteration-count : 1;/* cant, de veces que se realiza la animacion*/
+                animation-fill-mode: forwards;/* indica cual es el ultimo estado que se queda*/
+                animation-delay:3s;
+            }
+            @keyframes subtitulo{
+                from{
+                    color : rgba(165, 42, 42, 0);
+                }
+                to{
+                    color: rgba(165, 42, 42, 1);
+                }
+            }
+            p{
+                text-align : center;
+                font-family: "century gothic";
+                font-weight:bold;
+                animation-name: texto;
+                animation-duration: 3s;/* duracion */
+                animation-iteration-count: 1;/* se ejecuta una vez */
+                animation-fill-mode:backwards; 
+
+            }
+            .p1{animation-delay:9s;}
+
+            .p2{animation-delay:12s;}
+
+            @keyframes texto{/* animacion del parrafo */
+                from{
+                    color: rgba(0,0,0,0);
+                }
+                to{
+                    color:rgba(0,0,0,1);
+                }
+            }
+            img{ /* estilo de la imagen */
+                height: 200px;
+                width:200px;/* centrar la imagen */
+                display: block;
+                margin: auto;/* centrar imagen */
+                opacity:  0;
+
+                animation: imagen 3s 6s 1 forwards;/* duracion,espera 6 segundos, se ejecuta una vez */
+            }
+            @keyframes imagen{ /* la imagen saldra poco a poco */
+                from{
+                    opacity:0;
+                }
+                to{
+                    opacity:1;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Dra. Lisa Su </h1><!-- titulo grande -->
+        <h2>Directora ejecutiva de AMD y lider en innovacion tecnologica</h2><br>
+        <img src="img/logo.jpg"><br>
+
+        <p class ="p1">La Dra. Lisa Su es una ingeniera eléctrica y empresaria reconocida por ser 
+            la CEO de AMD, una de las empresas más importantes en el desarrollo de procesadores. Gracias 
+            a su conocimiento y liderazgo, ha logrado mejorar el rendimiento y la calidad de los productos tecnológicos.</p><br>
+
+        <p class="p2">Desde que asumió el cargo, Lisa Su ha llevado a AMD a competir con grandes compañías 
+            del sector, destacándose en la industria de computadoras y videojuegos. 
+            Su trabajo ha sido clave para la innovación y el avance tecnológico en todo el mundo.</p>
+    </body>
+</html>
