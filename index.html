@@ -19,66 +19,98 @@
         }
 
         .cuadrado-rosado {
-            width: 100%;
+            position: fixed;
+            top: 0;              /* pega arriba sin espacio */
+            left: 70px;          /* justo después de la barra celeste */
+            right: 0;
+            width: auto;
             height: 100px;
             background-color: #f8c8d4;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            margin-bottom: 30px;
-            border-radius: 12px;
+            border-radius: 0;    /* sin bordes redondeados si va pegada al borde */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            flex-shrink: 0;
+            z-index: 99;
+            margin-bottom: 0;
         }
 
         .cuadrado-rosado h1 {
             font-size: clamp(1.2rem, 8vw, 2.5rem);
             font-weight: bold;
-            color: #5e2a3c;
+            color: black;
             margin: 0;
             padding: 15px;
             word-break: break-word;
             line-height: 1.3;
         }
 
-        .columnas {
-            display: flex;
-            gap: 40px;
-            flex-grow: 1;  /* Toma toda la altura disponible después del cuadrado rosado */
-            align-items: stretch; /* Para que los hijos se estiren verticalmente */
-        }
-
+        /* Barra celeste FIJA a la izquierda */
         .vertical {
+            position: fixed;
+            left: 0;
+            top: 0;
             width: 100px;
-            height: 100%;
+            height: 100vh;
             background-color: #87CEFA;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 0 10px 10px 0;
+            box-shadow: 2px 0 6px rgba(0,0,0,0.15);
+            z-index: 100;
         }
 
         .vertical span {
             font-family: monospace;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             font-weight: bold;
-            line-height: 1.3;
+            line-height: 1.4;
             display: block;
             text-align: center;
         }
 
-        .vertical .bloque {
-            margin: 2px 0;
-        }
+        /* Todo el contenido se desplaza a la derecha para no taparse con la barra */
+        .main-content {
+            margin-left: 90px;
+            margin-top: 110px;   /* 100px barra + 10px espacio */
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+}
 
+        /* Galería con imágenes pequeñas y link debajo */
+        .img-ajedrez {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .galeria-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .galeria-item img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 3px solid black;
+            border-radius: 4px;
+        }
+        .galeria-item a {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        /* Sección de proyectos */
         .contenido {
             font-family: Arial, sans-serif;
-            flex-grow: 1;
         }
-
         ul {
             margin-top: 0;
             padding-left: 20px;
@@ -86,30 +118,59 @@
         li {
             margin: 5px 0;
         }
+        body {
+        background-image: url('img/Fondo\ .png');  /* ruta de tu foto */
+        background-size: cover;        /* cubre toda la pantalla */
+        background-position: center;   /* centra la imagen */
+        background-repeat: no-repeat;  /* no repite */
+        background-attachment: fixed;  /* el fondo no se mueve al hacer scroll */
+}
+
     </style>
 </head>
 <body>
-    <div class="cuadrado-rosado">
-        <h1>Bienvenidos a mi Página Web</h1>
+    <!-- Barra celeste fija -->
+    <div class="vertical">
+        <span>A</span><span>N</span><span>I</span><span>M</span><span>A</span><span>C</span><span>I</span><span>O</span><span>N</span>
+        <span>&nbsp;</span>
+        <span>D</span><span>E</span>
+        <span>&nbsp;</span>
+        <span>G</span><span>R</span><span>A</span><span>F</span><span>I</span><span>C</span><span>O</span><span>S</span>
     </div>
 
-    <div class="columnas">
-        <div class="vertical">
-            <span>A</span><span>N</span><span>I</span><span>M</span><span>A</span><span>C</span><span>I</span><span>O</span><span>N</span><br>
-            <span>D</span><span>E</span><br>
-            <span>G</span><span>R</span><span>A</span><span>F</span><span>I</span><span>C</span><span>O</span><span>S</span>
-        </div>
+    <!-- Todo el contenido principal -->
+    <div class="main-content">
 
-        <div class="contenido">
-            <h2>Selecciona un Proyecto:</h2>
-            <ul>
-                <li><a href="tableroajedrez/index.html">Tablero de Ajedrez</a></li>
-                <li><a href="Biografia/index.html">Biografia Dra.Lisa Su</a></li>
-                <li><a href="Estiloanimacion/index.html">Estilos de Animación</a></li>
-                <li><a href="semana4/index.html">Animación por pasos</a></li>
-
-            </ul>
+        <div class="cuadrado-rosado">
+            <h1>Bienvenidos a mi Página Web</h1>
         </div>
+        <!-- Título centrado fuera del cuadro rosado -->
+        <h2 style="text-align: center; margin: 10px 0;">Selecciona un Proyecto:</h2>
+
+        <!-- Imágenes pequeñas con link debajo -->
+        <!-- Imágenes pequeñas con link debajo -->
+<div class="img-ajedrez">
+    <div class="galeria-item">
+        <img src="img/ajedrez.png" alt="Tablero de Ajedrez">
+        <a href="tableroajedrez/index.html">Tablero de Ajedrez</a>
+    </div>
+    <div class="galeria-item">
+        <img src="img/DRA.lisa.png" alt="Dra. Lisa Su">
+        <a href="Biografia/index.html">Biografía Dra. Lisa Su</a>
+    </div>
+</div>
+
+<!-- Segunda fila de imágenes -->
+<div class="img-ajedrez">
+    <div class="galeria-item">
+        <img src="img/img3.png" alt="Estilos de Animación">
+        <a href="Estiloanimacion/index.html">Estilos de Animación</a>
+    </div>
+    <div class="galeria-item">
+        <img src="img/img4.png" alt="Animación por pasos">
+        <a href="semana4/index.html">Animación por pasos</a>
+    </div>
+</div>
     </div>
 
 </body>

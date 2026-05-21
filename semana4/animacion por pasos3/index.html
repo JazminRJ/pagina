@@ -6,6 +6,9 @@
                 margin: 0px;
                 padding:0px;
             }
+            body{
+                background-color: palevioletred;
+            }
             .contenedor{
                 width: 1000px;
                 height: 300px;
@@ -145,6 +148,28 @@
                     left: 800px;
                 }
             }
+            .texto h1 {
+            font-size: 36px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    z-index: 1;
+    background-color: #1f161600; 
+    padding: 10px 20px;
+    color: white;
+    animation: texto 3s ease-in-out forwards;
+        }
+
+        @keyframes texto{
+            0% { top: 300px; }
+            60% { top: 0; }
+            80% { top: 30px; } 
+            100% { top: 0; }
+        }
+
+
 
         </style>
     </head>
@@ -155,8 +180,12 @@
             <div class = "marco3"></div>
             <div class = "marco4"></div>
             <div class = "marco5"></div>
+            <div class="texto">
+            <h1>Tecnologia de Desarrollo Web</h1>
+        </div>
 
         </div>
 
     </body>
+
 </html>

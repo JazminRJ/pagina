@@ -2,18 +2,79 @@
 <head>
     <title>ANIMACION 3</title>
     <style>
-
+        .img-ajedrez {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .galeria-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .galeria-item img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 3px solid black;
+            border-radius: 4px;
+        }
+        .galeria-item a {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            color: #0000EE;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-<h1>ANIMACIONES CSS3 - MOVIMIENTO</h1>
-<a href="animacion1.html">Movimiento Vertical</a><br>
-<a href="animacion2.html">Movimiento Horizontal</a><br>
-<a href="animacion3.html">Movimiento en Esquina</a><br>
-<a href="animacion4.html">Movimiento en mangman</a><br>
-<a href="animacion5.html">Movimiento en cohete</a>
 
-</a>
+<div style="background-color: pink;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;">
+    <h1>ANIMACION - MOVIMIENTO</h1>
+</div>
 
-
+<!-- Primera fila -->
+<div class="img-ajedrez">
+    <div class="galeria-item">
+        <img src="img2/vertical.png" alt="Movimiento Vertical">
+        <a href="animacion1.html">Movimiento Vertical</a>
     </div>
+    <div class="galeria-item">
+        <img src="img2/horizontal.png" alt="Movimiento Horizontal">
+        <a href="animacion2.html">Movimiento Horizontal</a>
+    </div>
+</div>
+
+<!-- Segunda fila -->
+<div class="img-ajedrez">
+    <div class="galeria-item">
+        <img src="img2/esquina.png" alt="Movimiento en Esquina">
+        <a href="animacion3.html">Movimiento en Esquina</a>
+    </div>
+    <div class="galeria-item">
+        <img src="img2/megaman.gif" alt="Movimiento en Mangman">
+        <a href="animacion4.html">Movimiento en Mangman</a>
+    </div>
+</div>
+
+<!-- Tercera fila -->
+<div class="img-ajedrez">
+    <div class="galeria-item">
+        <img src="img2/cohete.webp" alt="Movimiento en Cohete">
+        <a href="animacion5.html">Movimiento en Cohete</a>
+    </div>
+</div>
+
+<a href="../index.html">← Volver</a>
+
+</body>
+</html>
