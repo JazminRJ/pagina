@@ -2,52 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos De Animación</title>
+
     <style>
 
-        html, body {
-            height: 100%;
+        *{
             margin: 0;
-            padding: 20px;
+            padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            display: flex;
-            flex-direction: column;
+        body{
             font-family: Arial, sans-serif;
+            background-image: url(img/Fondo\ .png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
-        .cuadrado-rosado {
-            position: fixed;
-            top: 0;              /* pega arriba sin espacio */
-            left: 70px;          /* justo después de la barra celeste */
-            right: 0;
-            width: auto;
-            height: 100px;
-            background-color: #f8c8d4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-radius: 0;    /* sin bordes redondeados si va pegada al borde */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            z-index: 99;
-            margin-bottom: 0;
-        }
-
-        .cuadrado-rosado h1 {
-            font-size: clamp(1.2rem, 8vw, 2.5rem);
-            font-weight: bold;
-            color: black;
-            margin: 0;
-            padding: 15px;
-            word-break: break-word;
-            line-height: 1.3;
-        }
-
-        /* Barra celeste FIJA a la izquierda */
-        .vertical {
+        /* BARRA LATERAL */
+        .vertical{
             position: fixed;
             left: 0;
             top: 0;
@@ -59,119 +35,161 @@
             justify-content: center;
             align-items: center;
             border-radius: 0 10px 10px 0;
-            box-shadow: 2px 0 6px rgba(0,0,0,0.15);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.2);
             z-index: 100;
         }
 
-        .vertical span {
-            font-family: monospace;
-            font-size: 1.6rem;
+        .vertical span{
+            font-size: 1.4rem;
             font-weight: bold;
-            line-height: 1.4;
-            display: block;
-            text-align: center;
+            font-family: monospace;
+            line-height: 1.3;
         }
 
-        /* Todo el contenido se desplaza a la derecha para no taparse con la barra */
-        .main-content {
-            margin-left: 90px;
-            margin-top: 110px;   /* 100px barra + 10px espacio */
+        /* CUADRO ROSADO */
+        .cuadrado-rosado{
+            position: fixed;
+            top: 0;
+            left: 100px;
+            right: 0;
+            height: 100px;
+            background-color: #f8c8d4;
             display: flex;
-            flex-direction: column;
-            gap: 30px;
-}
-
-        /* Galería con imágenes pequeñas y link debajo */
-        .img-ajedrez {
-            display: flex;
-            gap: 30px;
             justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 99;
+        }
+
+        .cuadrado-rosado h1{
+            font-size: 2.3rem;
+            color: black;
+        }
+
+        /* CONTENIDO */
+        .main-content{
+            margin-left: 120px;
+            margin-top: 140px;
+            padding: 20px;
+        }
+
+        .titulo{
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: black;
+        }
+        /* FILAS */
+        .img-ajedrez{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
             flex-wrap: wrap;
         }
-        .galeria-item {
+        /* TARJETAS */
+        .galeria-item{
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            transition: transform 0.3s;
         }
-        .galeria-item img {
-            width: 300px;
-            height: 300px;
+        .galeria-item:hover{
+            transform: scale(1.05);
+        }
+        .galeria-item img{
+            width: 260px;
+            height: 220px;
             object-fit: cover;
-            border: 3px solid black;
-            border-radius: 4px;
+            border: 5px solid black;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-        .galeria-item a {
-            font-family: Arial, sans-serif;
+        .galeria-item a{
             font-size: 1rem;
-            color: #0000EE;
+            font-weight: bold;
+            color: #7b1fa2;
+            text-decoration: none;
+        }
+        .galeria-item a:hover{
             text-decoration: underline;
         }
-        /* Sección de proyectos */
-        .contenido {
-            font-family: Arial, sans-serif;
-        }
-        ul {
-            margin-top: 0;
-            padding-left: 20px;
-        }
-        li {
-            margin: 5px 0;
-        }
-        body {
-        background-image: url('img/Fondo\ .png');  /* ruta de tu foto */
-        background-size: cover;        /* cubre toda la pantalla */
-        background-position: center;   /* centra la imagen */
-        background-repeat: no-repeat;  /* no repite */
-        background-attachment: fixed;  /* el fondo no se mueve al hacer scroll */
-}
-
     </style>
 </head>
 <body>
-    <!-- Barra celeste fija -->
     <div class="vertical">
-        <span>A</span><span>N</span><span>I</span><span>M</span><span>A</span><span>C</span><span>I</span><span>O</span><span>N</span>
-        <span>&nbsp;</span>
-        <span>D</span><span>E</span>
-        <span>&nbsp;</span>
-        <span>G</span><span>R</span><span>A</span><span>F</span><span>I</span><span>C</span><span>O</span><span>S</span>
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>M</span>
+        <span>A</span>
+        <span>C</span>
+        <span>I</span>
+        <span>Ó</span>
+        <span>N</span>
+        <br>
+        <span>D</span>
+        <span>E</span>
+        <br>
+        <span>G</span>
+        <span>R</span>
+        <span>Á</span>
+        <span>F</span>
+        <span>I</span>
+        <span>C</span>
+        <span>O</span>
+        <span>S</span>
+
     </div>
 
-    <!-- Todo el contenido principal -->
+    <!-- ENCABEZADO -->
+    <div class="cuadrado-rosado">
+        <h1>Bienvenidos a mi Página Web</h1>
+    </div>
     <div class="main-content">
+        <h2 class="titulo">Selecciona un Proyecto:</h2>
+        <div class="img-ajedrez">
 
-        <div class="cuadrado-rosado">
-            <h1>Bienvenidos a mi Página Web</h1>
+            <div class="galeria-item">
+                <img src="img/ajedrez.png" alt="Ajedrez">
+                <a href="tableroajedrez/index.html">
+                    Tablero de Ajedrez-S01
+                </a>
+            </div>
+            <div class="galeria-item">
+                <img src="img/DRA.lisa.png" alt="Lisa Su">
+                <a href="Biografia/index.html">
+                    Biografía Dra. Lisa Su-S02
+                </a>
+            </div>
+            <div class="galeria-item">
+                <img src="img/img3.png" alt="Animación">
+                <a href="Estiloanimacion/index.html">
+                    Estilos de Animación-S3
+                </a>
+            </div
         </div>
-        <!-- Título centrado fuera del cuadro rosado -->
-        <h2 style="text-align: center; margin: 10px 0;">Selecciona un Proyecto:</h2>
-
-        <!-- Imágenes pequeñas con link debajo -->
-        <!-- Imágenes pequeñas con link debajo -->
-<div class="img-ajedrez">
-    <div class="galeria-item">
-        <img src="img/ajedrez.png" alt="Tablero de Ajedrez">
-        <a href="tableroajedrez/index.html">Tablero de Ajedrez</a>
+        <div class="img-ajedrez">
+            <div class="galeria-item">
+                <img src="img/img4.png" alt="Animación por pasos">
+                <a href="semana4/index.html">
+                    Animación por Pasos-S4
+                </a>
+            </div>
+            <div class="galeria-item">
+                <img src="img/muñequito.png" alt="Proyecto 5">
+                <a href="CLIPPATH/index.html">
+                    Clippath-S05
+                </a>
+            </div>
+            <div class="galeria-item">
+                <img src="img/parallax.png" alt="Proyecto 6">
+                <a href="efecto_parallax/index.html">
+                    PARALLAX-S05
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="galeria-item">
-        <img src="img/DRA.lisa.png" alt="Dra. Lisa Su">
-        <a href="Biografia/index.html">Biografía Dra. Lisa Su</a>
-    </div>
-</div>
-
-<!-- Segunda fila de imágenes -->
-<div class="img-ajedrez">
-    <div class="galeria-item">
-        <img src="img/img3.png" alt="Estilos de Animación">
-        <a href="Estiloanimacion/index.html">Estilos de Animación</a>
-    </div>
-    <div class="galeria-item">
-        <img src="img/img4.png" alt="Animación por pasos">
-        <a href="semana4/index.html">Animación por pasos</a>
-    </div>
-</div>
-    </div>
-
 </body>
 </html>
