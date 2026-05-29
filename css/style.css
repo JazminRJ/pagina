@@ -1,0 +1,349 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.petalos{
+    width:90%;
+    height:100vh;
+    background-image:url("../img/petaloss.gif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.fondo{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+    background-image:url("../img/fondo.png");
+    background-size:cover;
+    background-position:center;
+    animation: fondo 20s 1 forwards, salida 1.5s 10s forwards
+}
+@keyframes fondo{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@keyframes salida{
+    to{ opacity: 0; }
+}
+
+.svg-text{
+    position: absolute;
+    fill: transparent;
+    stroke: white;
+    stroke-width: 35;
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+    animation: jaz 10s ease-in-out 1 forwards;
+}
+@keyframes jaz{ 
+    0%{
+        stroke-dashoffset: 20000;
+    }
+    88%{
+        fill: transparent;
+    }
+    100%{
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
+.svg-text{
+    width: 80%;
+    max-width: 1200;
+    right: 0px;
+    left: 215px;
+    top:-400px;
+}
+.cuadrado-rosado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #f8c8d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            
+    }
+.proyectos{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y:auto;
+    background-image: url("../img/Fondo\ .png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden; 
+    animation: entrada 1s 11.5s forwards;
+}
+@keyframes entrada{
+    to{ 
+        opacity: 1;
+        visibility: visible; 
+    }
+}
+.contenedor1{
+    width: 200px;
+    height: 200px;
+    left:15%;
+    top: 20%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/ajedrez.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+
+.contenedor2{
+    width: 200px;
+    height: 200px;
+    left:35%;
+    top: 20%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/DRA.lisa.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+.contenedor3{
+    width:200px;
+    height: 200px;
+    left:55%;
+    top: 20%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/img3.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+.contenedor4{
+    width: 200px;
+    height: 200px;
+    left:75%;
+    top: 20%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/img4.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;/* antes era hidden pero eso hace que no se vea el link de los archivos y se le cambia por visible */
+}
+.contenedor5{
+    width: 200px;
+    height: 200px;
+    left:15%;
+    top: 60%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/muñequito.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+.contenedor6{
+    width: 200px;
+    height: 200px;
+    left:35%;
+    top: 60%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/parallax.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+.contenedor7{
+    width: 200px;
+    height: 200px;
+    left:55%;
+    top:60%;
+    border: 3px solid black;
+    position: absolute;
+    background-image: url(../img/parallax2.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+
+.link1{
+    position:absolute;
+    left:25px;
+    top:200px;
+    text-align: center;
+}.link2{
+    position:absolute;
+    left:20px;
+    top:200px;
+    text-align: center;
+}
+.link3{
+    position:absolute;
+    left:20px;
+    top:200px;
+    text-align: center;
+}
+.link4{
+    position:absolute;
+    left:20px;
+    top:200px;
+    text-align: center;
+}
+.link5{
+    position:absolute;
+    left:35px;
+    top:200px;
+    text-align: center;
+}
+.link6{
+    position:absolute;
+    left:35px;
+    top:200px;
+    text-align: center;
+}
+.link7{
+    position:absolute;
+    left:35px;
+    top:200px;
+    text-align: center;
+}
+#proyectos:target{
+    opacity: 1;
+    visibility: visible;
+    animation: none;
+}
+#proyectos:target ~ * .fondo,
+.fondo:has(+ * #proyectos:target) {
+    display: none;
+}
+.img1{
+
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left:180px;
+    top:695px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: gato1 5s infinite ease-in-out;
+}
+@keyframes gato1{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+    
+
+}
+.img2{
+
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left:1550px;
+    top:575px;
+    background-size: cover;
+    background-position: center;
+    animation: gato2 5s infinite ease-in-out;
+}
+@keyframes gato2{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+
+}
+.img3{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left:1100px;
+    top:600px;
+    background-size: cover;
+    background-position: center;
+    animation: gato3 5s infinite ease-in-out;
+    
+}
+@keyframes gato3{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+
+}
+.img4{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left:620px;
+    top:680px;
+    background-size: cover;
+    background-position: center;
+    animation: gato4 5s infinite ease-in-out;
+}
+@keyframes gato4{
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+
+}
+.vertical{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #f8c8d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    z-index: 5;
+    }

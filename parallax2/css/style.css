@@ -1,0 +1,127 @@
+*{
+    margin: 0PX;
+    padding: 0px;
+}
+body{
+    background-color: pink;
+}
+.contenedor{
+    width:500px;
+    height: 800px;
+    left: px;
+    top:50px;
+    border : 1px solid black;
+    margin: 0 auto; /* centrar */
+    overflow: hidden;
+    position: relative;
+}
+.cielo{
+    position: absolute;
+    left: -200px;
+    top: -150px;
+    filter: blur(2px);/* lo pone borroso */
+    animation: cielo 30s 1 forwards;
+}
+@keyframes cielo{
+    from{
+        scale:100%;
+        filter: blur(5px);
+        left: -500px;
+    }
+    to{
+        scale:130%;
+        filter: blur(2px);
+    }
+}
+.montaña{
+    position: absolute;
+    left:-600px;
+    
+    animation: montaña 15s 1 forwards;
+}
+@keyframes montaña{
+    from{
+        top: 0px;
+        scale: 100%;
+        filter: blur(5px);
+    }
+    to{
+        top: -50px;
+        scale: 105%;
+        filter: blur(0px);
+    }
+}
+.persona{
+    position: absolute;
+    width: 800px ;
+    left: -110px;
+    top: 350px;
+    animation: persona 10s 1 forwards;
+}
+@keyframes persona{
+    from{
+        scale: 80%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+.niebla{
+    position: absolute;
+    width: 1000px ;
+    left: -150px;
+    top: 400px;
+    animation: niebla 15s 1 forwards;
+}
+@keyframes niebla{/* se va todo izquierda */
+    from{
+        left: -1000px;
+    }
+    to{
+        left: 120%;
+    }
+}
+.niebla1{
+    position: absolute;
+    width: 1000px ;
+    right: -150px;
+    top: 500px;
+    animation: niebla1 15s 1 forwards;
+}
+@keyframes niebla1{/* se va todo derecha  */
+    from{
+        right: -1000px;
+    }
+    to{
+        right: 120%;
+    }
+}
+.svg-text{
+    position: absolute;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 35;
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+    animation: jaz 3s ease-in-out 1 forwards;
+}
+@keyframes jaz{ 
+    0%{
+        stroke-dashoffset: 20000;
+    }
+    88%{
+        fill: transparent;
+    }
+    100%{
+        fill: pink;
+        stroke-dashoffset: 0;
+    }
+}
+.svg-text{
+    position: absolute;
+    width: 400px;
+    left: 120px;
+    top: 5px;
+    z-index: 10;
+}
