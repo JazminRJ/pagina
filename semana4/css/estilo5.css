@@ -1,0 +1,64 @@
+body {
+            color: #222;
+            max-width: 600px;
+            margin: 60px auto;/* no quedara muy estirado */
+            padding: 0 20px;
+        }
+
+        .marco1 a{
+            background-color:pink;
+            text-align: center;
+        }
+        .marco2 a{
+            background-color:lightblue;
+            text-align: center;
+        }
+
+        .marco3 a{
+            background-color:lavender;
+            text-align: center;
+        }
+
+        .marco4 a{
+            background-color:palevioletred;
+            text-align: center;
+        }
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 30px;
+        }
+
+        .h1{
+            text-align: center;
+        }
+        .volver{
+        width: 115px;
+        height: 55px;
+        background-color:rgb(188, 109, 237);
+        border: 2px solid purple;
+        left:720px;
+        top: 480px;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+    a{
+    text-decoration: none;
+}
+    

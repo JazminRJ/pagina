@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+#cuadrito1{
+    background-color: khaki;/*comentario*/
+}
+#cuadrito2{
+    background-color: black;
+}
+#cuadrito1, #cuadrito2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#contenedor1{
+    width: 1000px;
+    background-color: pink;
+}
+#contenedor2{
+    width: 1000px;
+    background-color: pink;
+}
+.volver{
+        width: 92px;
+        height: 40px;
+        background-color:rgb(204, 139, 245);
+        border: 1px solid purple;
+        left:820px;
+        top: 100px;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+body{
+    background-color: pink;
+}

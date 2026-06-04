@@ -1,0 +1,112 @@
+*{
+                margin: 0%;
+                padding: 0px;
+            }
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 5px solid black;
+                margin: 0 auto;
+                position:relative; 
+                overflow: hidden;    
+
+            }
+            .cuadrito{
+                width: 100px;
+                height: 100px;
+                position: absolute;  
+                top:0px;
+                left:0px ;          
+                animation: cuadrito 4s infinite;
+
+            }
+            .abeja{
+                position: absolute;
+                width:100%;
+                z-index: 0;
+            }
+            
+            @keyframes cuadrito {
+
+                0%{
+                    top:0px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+                50%{
+                    top:200px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                100%{
+                    top:0px;
+                    left: 800px;
+                    rotate: 45deg;
+
+                }
+            
+            }
+            .cuadrito2{
+                width: 100px;
+                height: 100px;
+                position: absolute;  
+                top:0px;
+                left:0px ;          
+                animation: cuadrito2 5s infinite 2s;
+
+            }
+            .abeja2{
+                position: absolute;
+                width:100%;
+                z-index: 0;
+            }
+            
+            @keyframes cuadrito2 {
+
+                0%{
+                    top:0px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+                50%{
+                    top:200px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                100%{
+                    top:0px;
+                    left: 800px;
+                    rotate: 45deg;
+
+                }
+            
+            }
+        
+        .pradera{
+            position: absolute;
+            top:-450px;
+            left:0px;
+            width: 100%;
+            z-index:-1;
+            }    
+        .cielo{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 100%;
+            z-index:-2;
+        }
+        .volver{
+        width: 92px;
+        height: 40px;
+        background-color:rgb(204, 139, 245);
+        border: 1px solid purple;
+        left:700px;
+        top: 400px;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+    a{
+    text-decoration: none;
+}

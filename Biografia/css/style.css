@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+        background-color: pink; /* fondo */
+    }
+h1{
+    font-family : "century gothic";
+    color : rgba(165, 42, 42, 0);
+    text-align : center;
+    animation-name : titulo;/* titulo para la animacion*/
+    animation-duration : 3s;/* duracion de la animacion*/
+    animation-iteration-count : 1;/* cant, de veces que se realiza la animacion*/
+    animation-fill-mode: forwards;/* indica cual es el ultimo estado que se queda*/
+    }
+    @keyframes titulo{
+        from{
+            color : rgba(165, 42, 42, 0);
+            }
+            to{
+            color: rgba(165, 42, 42, 1);
+            }
+        }
+h3{ 
+    font-family : "century gothic";
+    color : rgba(165, 42, 42, 0);
+    text-align : center;
+    animation-name : subtitulo;/* titulo para la animacion*/
+    animation-duration : 3s;/* duracion de la animacion*/
+    animation-iteration-count : 1;/* cant, de veces que se realiza la animacion*/
+    animation-fill-mode: forwards;/* indica cual es el ultimo estado que se queda*/
+    animation-delay:3s;
+    }
+    @keyframes subtitulo{
+    from{
+        color : rgba(165, 42, 42, 0);
+        }
+    to{
+        color: rgba(165, 42, 42, 1);
+        }
+    }
+p{
+    text-align : center;
+    font-family: "century gothic";
+    font-weight:bold;
+    animation-name: texto;
+    animation-duration: 3s;/* duracion */
+    animation-iteration-count: 1;/* se ejecuta una vez */
+    animation-fill-mode:backwards; 
+    }
+.p1{animation-delay:9s;}
+
+.p2{animation-delay:12s;}
+
+@keyframes texto{/* animacion del parrafo */
+    from{
+        color: rgba(0,0,0,0);
+    }
+    to{
+        color:rgba(0,0,0,1);
+        }
+    }
+            img{ /* estilo de la imagen */
+                height: 200px;
+                width:200px;/* centrar la imagen */
+                display: block;
+                margin: auto;/* centrar imagen */
+                opacity:  0;
+
+                animation: imagen 3s 6s 1 forwards;/* duracion,espera 6 segundos, se ejecuta una vez */
+            }
+            @keyframes imagen{ /* la imagen saldra poco a poco */
+                from{
+                    opacity:0;
+                }
+                to{
+                    opacity:1;
+                }
+            }
+            .volver{
+            width: 92px;
+            height: 30px;
+            background-color:rgb(204, 139, 245);
+            border: 1px solid purple;
+            left:50px;
+            top: 50px;
+            position: absolute;
+            border-radius: 10px;
+            text-align: center;
+        }
+        a{
+    text-decoration: none;
+}

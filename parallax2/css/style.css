@@ -9,7 +9,7 @@ body{
     width:500px;
     height: 800px;
     left: px;
-    top:50px;
+    top:20px;
     border : 1px solid black;
     margin: 0 auto; /* centrar */
     overflow: hidden;
@@ -124,4 +124,18 @@ body{
     left: 120px;
     top: 5px;
     z-index: 10;
+}
+.volver{
+        width: 92px;
+        height: 40px;
+        background-color:rgb(204, 139, 245);
+        border: 1px solid purple;
+        left:180px;
+        top: 400px;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+a{
+    text-decoration: none;
 }

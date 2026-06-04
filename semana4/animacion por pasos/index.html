@@ -1,116 +1,6 @@
 <html>
     <head>
-        <style>
-            body{
-                background-color: lightpink;
-            }
-            *{
-                margin: 0%;
-                padding: 0px;
-            }
-            .contenedor{
-                width: 800px;
-                height: 300px;
-                border: 5px solid black;
-                margin: 0 auto;
-                position:relative; 
-                overflow: hidden;    
-
-            }
-            .cuadrito{
-                width: 100px;
-                height: 100px;
-                position: absolute;  
-                top:0px;
-                left:0px ;          
-                animation: cuadrito 4s infinite;
-
-            }
-            .abeja{
-                position: absolute;
-                width:100%;
-                z-index: 0;
-            }
-            
-            @keyframes cuadrito {
-
-                0%{
-                    top:0px;
-                    left: -100px;
-                    rotate: 45deg;
-                }
-                50%{
-                    top:200px;
-                    left: 350px;
-                    rotate: 0deg;
-                }
-                100%{
-                    top:0px;
-                    left: 800px;
-                    rotate: 45deg;
-
-                }
-            
-            }
-            .cuadrito2{
-                width: 100px;
-                height: 100px;
-                position: absolute;  
-                top:0px;
-                left:0px ;          
-                animation: cuadrito2 5s infinite 2s;
-
-            }
-            .abeja2{
-                position: absolute;
-                width:100%;
-                z-index: 0;
-            }
-            
-            @keyframes cuadrito2 {
-
-                0%{
-                    top:0px;
-                    left: -100px;
-                    rotate: 45deg;
-                }
-                50%{
-                    top:200px;
-                    left: 350px;
-                    rotate: 0deg;
-                }
-                100%{
-                    top:0px;
-                    left: 800px;
-                    rotate: 45deg;
-
-                }
-            
-            }
-        
-        .pradera{
-            position: absolute;
-            top:-450px;
-            left:0px;
-            width: 100%;
-            z-index:-1;
-            }    
-        .cielo{
-            position: absolute;
-            top:0px;
-            left:0px;
-            width: 100%;
-            z-index:-2;
-        }
-        .volver{
-        width: 80px;
-        height:20px;
-        font-size:30px;
-        background-color: rgb(212, 111, 255);
-        color:black;
-        border:2px solid black;
-        }
-        </style>
+        <link rel="stylesheet" href="css/estilo1.css">
     </head>
     <body>
         <div class="contenedor">
@@ -121,9 +11,10 @@
                 <img class="abeja2" src="img/abejita2.jpg" alt="">
             </div>
             <img class="pradera" src="img/pradera.png" alt="">
-            <img class="cielo" src="img/cielo.png" alt="">
+            <img class="cielo" src="img/cielo.jpg" alt="">
         </div>
-    <a href="../index.html"class = "volver">Volver</a>
+
+    <a href="../index.html"class = "volver"><h1><b>Volver</b></h1></a>
     </body>
 
 </html>

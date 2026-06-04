@@ -1,0 +1,620 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: pink;
+}
+.contenedor{
+    position:relative;
+    width:1200px;
+    height:700px;
+    border : 1px solid black;
+    overflow: hidden;
+    background-color: rgb(200, 108, 239);
+    background-size: cover;
+    background-position: center;
+    margin:0 auto;
+}
+.img{
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    position: absolute;
+    background-image: url(../img/img10.png);
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    animation: animacion 15s 1 forwards;
+}
+@keyframes animacion{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.6);
+    }
+}
+.venado{
+    width:160px;
+    height:160px;
+    position:absolute;
+    top:380px;
+    left:300px;
+    background-image:url(../img/venado.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:5;
+    animation:vena 13s infinite alternate ease-in-out;
+}
+@keyframes vena{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.venado1{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:400px;
+    left:820px;
+    background-image:url(../img/venado2.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:8;
+    animation:vena 15s infinite alternate ease-in-out;
+}
+@keyframes vena{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+.luz{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:250px;
+    left:900px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+}
+/* Lucez 1 */
+.luz1{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:550px;
+    left:800px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luze 2s infinite ease-in-out;
+}
+@keyframes luze{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.luz2{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:480px;
+    left:450px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luza 2s infinite ease-in-out;
+}
+@keyframes luza{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+}
+.luz3{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:20px;
+    left:485px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+}
+.luz4{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:2px;
+    left:650px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luzo 2s infinite ease-in-out;
+}
+@keyframes luzo{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.luz5{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:480px;
+    left:900px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+
+}
+/* LUCES 6s */
+.luz6{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:100px;
+    left:580px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+/* LUCES 7 */
+.luz7{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:350px;
+    left:50px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.luz8{
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:350px;
+    left:550px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.luz9{
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:370px;
+    left:650px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.luz10{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:395px;
+    left:100px;
+    background-image:url(../img/luz.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    z-index:6;
+    animation:luz 2s infinite ease-in-out;
+}
+@keyframes luz{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.mariposa{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:300px;
+    left:130px;
+    background-image:url(../img/mariposa.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:7;
+    animation:mari 5s infinite alternate ease-in-out;
+}
+@keyframes mari{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+/* MARIPOSA 1 */
+.mariposa1{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:400px;
+    left:250px;
+    background-image:url(../img/mariposa.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:7;
+    animation:mari 5s infinite alternate ease-in-out;
+}
+@keyframes mari{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.mariposa2{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:500px;
+    left:30px;
+    background-image:url(../img/mariposa.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:7;
+    animation:mari 5s infinite alternate ease-in-out;
+}
+@keyframes mari{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.mariposa3{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:380px;
+    left:1050px;
+    background-image:url(../img/mariposa.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:7;
+    animation:mari 5s infinite alternate ease-in-out;
+}
+@keyframes mari{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.mariposa4{
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:600px;
+    left:1080px;
+    background-image:url(../img/mariposa.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    z-index:7;
+    animation:mari 5s infinite alternate ease-in-out;
+}
+@keyframes mari{
+    0%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:0.5;
+    }
+}
+.fondo{
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+}
+.pajaro1{
+    width:100px; 
+    height:100px; 
+    position:absolute; 
+    top:10px; 
+    left:-400px; 
+    background-image:url(../img/pajaro1.png); 
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    background-position:center; z-index:5; 
+    animation:pajaro 8s linear forwards; } 
+    @keyframes pajaro{ 
+        0%{ 
+            left:-400px; } 
+        100%{ 
+            left:1300px; } 
+    }
+
+.pajaro2{
+    width:100px; 
+    height:100px; 
+    position:absolute; 
+    top:10px; 
+    left:1300px; 
+    background-image:url(../img/pajaro2.png); 
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    background-position:center; z-index:5; 
+    animation:pajarito 8s linear forwards; } 
+    @keyframes pajarito{ 
+        0%{ left:1300px; 
+        } 
+        100%{ left:-400px; 
+        } 
+    }
+    .pajaro3{
+    width:100px; 
+    height:100px; 
+    position:absolute; 
+    top:155px; 
+    left:-900px; 
+    background-image:url(../img/pajaro1.png); 
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    background-position:center; z-index:5; 
+    animation:pajaro 15s linear forwards; } 
+    @keyframes pajaro{ 
+        0%{ 
+            left:-900px; } 
+        100%{ 
+            left:1900px; } 
+    }
+    .pajaro4{
+    width:100px; 
+    height:100px; 
+    position:absolute; 
+    top:155px; 
+    left:1900px; 
+    background-image:url(../img/pajaro2.png); 
+    background-size:contain; 
+    background-repeat:no-repeat; 
+    background-position:center; z-index:5; 
+    animation:pajarit 15s linear forwards; } 
+    @keyframes pajarit{ 
+        0%{ left:1900px; 
+        } 
+        100%{ left:-900px; 
+        } 
+    }
+    .volver{
+        width: 92px;
+        height: 40px;
+        background-color:rgb(204, 139, 245);
+        border: 1px solid purple;
+        left:30px;
+        top: 350px;
+        position: absolute;
+        border-radius: 10px;
+        text-align: center;
+    }
+ a{
+    text-decoration: none;
+}
