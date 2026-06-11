@@ -60,7 +60,7 @@
     max-width: 1200;
     right: 0px;
     left: 215px;
-    top:-400px;
+    top:-300px;
 }
 .cuadrado-rosado{
     position: fixed;
@@ -99,11 +99,11 @@
 .contenedor1{
     width: 200px;
     height: 200px;
-    left:15%;
+    left:25%;
     top: 20%;
     border: 3px solid black;
     position: absolute;
-    background-image: url(../img/ajedrez.png);
+    background-image: url(../img/ajedrez.gif);
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
@@ -113,7 +113,7 @@
 .contenedor2{
     width: 200px;
     height: 200px;
-    left:35%;
+    left:45%;
     top: 20%;
     border: 3px solid black;
     position: absolute;
@@ -123,14 +123,14 @@
     margin: 0 auto; 
     overflow: visible;
 }
-.contenedor3{
+.contenedor3{/* cambiar fondo */
     width:200px;
     height: 200px;
-    left:55%;
+    left:65%;
     top: 20%;
     border: 3px solid black;
     position: absolute;
-    background-image: url(../img/img3.png);
+    background-image: url(../img/megaman.gif);
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
@@ -139,11 +139,11 @@
 .contenedor4{
     width: 200px;
     height: 200px;
-    left:75%;
+    left:85%;
     top: 20%;
     border: 3px solid black;
     position: absolute;
-    background-image: url(../img/img4.png);
+    background-image: url(../img/abeja.gif);
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
@@ -152,7 +152,7 @@
 .contenedor5{
     width: 200px;
     height: 200px;
-    left:15%;
+    left:25%;
     top: 60%;
     border: 3px solid black;
     position: absolute;
@@ -165,11 +165,11 @@
 .contenedor6{
     width: 200px;
     height: 200px;
-    left:35%;
+    left:45%;
     top: 60%;
     border: 3px solid black;
     position: absolute;
-    background-image: url(../img/parallax.png);
+    background-image: url(../img/parallax.gif);
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
@@ -178,11 +178,24 @@
 .contenedor7{
     width: 200px;
     height: 200px;
-    left:55%;
+    left:65%;
     top:60%;
     border: 3px solid black;
     position: absolute;
     background-image: url(../img/parallax2.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
+    overflow: visible;
+}
+.contenedor8{
+    width: 350px;
+    height: 650px;
+    left:5%;
+    top:10%;
+    border:0px solid black;
+    position: absolute;
+    background-image: url(../img/jaz.png);
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
@@ -347,3 +360,8 @@
     box-shadow: 2px 0 8px rgba(0,0,0,0.2);
     z-index: 5;
     }
+a{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #000000;
+    text-decoration: none;
+}
